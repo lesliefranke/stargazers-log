@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color: #17202a;
+  background: #f4f1ea;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+body {
+  margin: 0;
+  padding: 3rem 1.25rem;
+}
+
+main {
+  width: min(100%,  fiftyrem);
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+  color: #b0442f;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1;
+}
+
+header p {
+  max-width: 38rem;
+  margin: 0;
+  color: #59636e;
+  font-size: 1.1rem;
+}
+
+.repository-list {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.repository {
+  padding: 1.25rem;
+  border: 1px solid #d8d1c5;
+  border-radius: 0.5rem;
+  background: #fffdf8;
+  box-shadow: 0 0.4rem 0.9rem rgb(42 33 24 / 8%);
+}
+
+.repository h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.repository h2 a {
+  color: #1d5962;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
+}
+
+.repository p {
+  margin: 0.75rem 0 1rem;
+  color: #46515a;
+  line-height: 1.5;
+}
+
+.repository-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 0;
+  color: #68747d;
+  font-size: 0.9rem;
+}
+
+.repository-meta span::before {
+  content: "•";
+  margin-right: 0.45rem;
+  color: #b0442f;
+}
+
+.status {
+  color: #68747d;
+}
+
+@media (max-width: 35rem) {
+  body {
+    padding: 2rem 1rem;
+  }
+}
